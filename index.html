@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Deckbuilder</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="libraries/p5.js"></script>
+    <script src="libraries/p5.sound.js"></script>
+    <script src="App.js"></script>
+    <script src="Card.js"></script>
+</head>
+
+<style>
+    .row {
+        display: flex;
+    }
+
+    .left {
+        flex: 20%;
+        padding: 15px 0;
+    }
+
+    .left h2 {
+        padding-left: 8px;
+    }
+
+    #searchbar {
+        width: 100%;
+        font-size: 18px;
+        padding: 11px;
+        border: 1px solid #ddd;
+    }
+
+    .deckbuilder {
+        flex: 60%;
+        padding: 15px;
+    }
+
+    .right {
+        flex: 20%;
+        padding: 15px 0;
+    }
+</style>
+
+<body>
+    <div class="row">
+        <div class="left" style="background-color: #2455EE;">
+            <h2>Cardfight Vanguard Deckbuilder</h2>
+            <input type="text" id="searchbar" placeholder="Search..">
+            <ul>
+            </ul>
+        </div>
+
+        <div class="deckbuilder" id="sketch-holder" style="background-color: #6A8BF0;"></div>
+
+        <div class="right" style="background-color: #2455EE;">
+
+        </div>
+    </div>
+</body>
+
+</html>
